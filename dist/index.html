@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap" rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="../dev/main.css">
+    <!--title page-->
+    <title>Weather Time</title>
+</head>
+
+<body>
+    <section id="app" class="base-container">
+
+        <!--header-->
+        <header class="mt-5 mb-4 me-3">
+            <h1 class="center header-title">Weather</h1>
+            <h2 class="center header-subtitle">Costa Rica</h2>
+        </header>
+
+        <!--content-->
+        <section class="center me-3">
+           <time-card place="San José" time="Party cloud" degrees="25°C" rain="40%" wind="9 kmp" info="Feels like 28°C" uv="UV Index: High"></time-card>
+        </section>
+
+    </section>
+
+    <!--Scripts-->
+    <!--js main-->
+    <script src="./js/main.js"></script>
+    <!--Vuejs-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!--components-->
+    <script src="./js/components/TimeCard.js"></script>
+     <!--MountedApp-->
+     <script>
+        const mountedApp = app.mount("#app");
+    </script>
+</body>
+
+</html>

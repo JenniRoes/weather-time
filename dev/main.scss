@@ -1,0 +1,9 @@
+//bootstrap
+@use './scss/vendor/bootstrap/bootstrap.scss';
+
+//sass files
+@use './scss/abstracts/vars';
+@use './scss/abstracts/utils';
+@use './scss/base/base.scss';
+@use './scss/components/container';
+@use './scss/components/typography';

@@ -1,0 +1,17 @@
+@use '../abstracts/vars';
+
+.base-container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent linear-gradient(205deg, vars.$clr-blue-100 0%, vars.$clr-lightblue 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.weather-card {
+    width: 343px;
+    height: 210px;
+    background: vars.$clr-blue-50;
+    border-radius: 10px  
+}

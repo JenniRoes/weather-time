@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Weather App</title>
+</head>
+<body>
+    
+
+    <!-- AXIOS API JS-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script>
+        /*
+            --- ENPOINTS ---
+            https://api.weatherapi.com/v1/current.json?key=add-your-api-key&q=San Jose, Costa Rica&aqi=no
+            https://api.weatherapi.com/v1/current.json?key=add-your-api-key&q=Heredia, Costa Rica&aqi=no
+            https://api.weatherapi.com/v1/current.json?key=add-your-api-key&q=Alajuela, Costa Rica&aqi=no
+            https://api.weatherapi.com/v1/current.json?key=add-your-api-key&q=Cartago, Costa Rica&aqi=no
+            https://api.weatherapi.com/v1/current.json?key=add-your-api-key&q=Limon, Costa Rica&aqi=no
+            https://api.weatherapi.com/v1/current.json?key=add-your-api-key&q=Guanacaste, Costa Rica&aqi=no
+            https://api.weatherapi.com/v1/current.json?key=add-your-api-key&q=Puntarenas, Costa Rica&aqi=no
+        */
+        axios({
+            method: 'get',
+            url: 'https://api.weatherapi.com/v1/current.json?key=42d2123d7c9b4fb2a0e144921231705&q=San Jose, Costa Rica&aqi=no'
+        })
+        .then(
+            (response) => {
+                console.log(response);
+            }
+        )
+        .catch(
+            error => console.log(error)
+        );
+    </script>
+
+</body>
+</html>

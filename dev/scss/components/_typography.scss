@@ -1,0 +1,47 @@
+@use '../abstracts/vars';
+
+.header-title {
+    color: vars.$clr-white;
+    font-size: vars.$fs-xxxl;
+    font-weight: vars.$fw-bold;
+}
+
+.header-subtitle {
+    color: vars.$clr-white;
+    font-size: vars.$fs-xxl;
+    font-weight: vars.$fw-light;
+}
+
+.place-title {
+    color: vars.$clr-white;
+    font-size: vars.$fs-lg;
+    font-weight: vars.$fw-bold;
+}
+
+.time {
+    color: vars.$clr-white;
+    font-size: vars.$fs-xsm;
+    font-weight: vars.$fw-light;
+}
+
+.degrees {
+    color: vars.$clr-white;
+    font-size: vars.$fs-xl;
+    font-weight: vars.$fw-bold;
+}
+
+.odds {
+    color: vars.$clr-white;
+    font-size: vars.$fs-sm;
+    font-weight: vars.$fw-light;
+}
+
+.info {
+    color: vars.$clr-white;
+    font-size: vars.$fs-md;
+    font-weight: vars.$fw-light;
+}
+
+.space {
+    line-height: 20px;
+}
